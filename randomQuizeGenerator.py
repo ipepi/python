@@ -23,11 +23,28 @@ capitals = {'北海道': '札幌市', '青森県': '青森市', '岩手県': '�
   #35個の問題集を作成する
 for quiz_num in range(35):
     # TODO: 問題集と回答集のファイルを作成する
+    quiz_file = open('capitalsquiz{}.txt'.format(quiz_num + 1), 'w')
+    answer_key_file = open('capitalsquiz_answers{}.txt'.format(quiz_num + 1), 'w')
 
     # TODO: 問題集のヘッダーを書く
+    quiz_file.write('名前:\n\n日付:\n\n学期:\n\n')
+    quiz_file.write((' ' * 20) + '都道府県庁所在地クイズ（問題番号{}）'.format(quiz_num + 1))
+    quiz_file.write('\n\n')
 
     # TODO: 都道府県の順番をシャッフルする
+    prefectures = list(capitals.keys())
+    random.shuffle(prefectures)
 
     # TODO: 47都道府県をループしてそれぞれ問題を作成する
+    for question_num in range(len(prefectures)):
+        #正解と誤答を取得する
+        correct_answer = capitals[prefectures[question_num]]
+        wrong_answers = list(capital.values())
+        del wrong_answers[wrong_answers.index(correct_answer)]
+        wrong_answers = random.sample(wrong_answers, 3)
+        answer_options = wrong_answers + [correct_answer]
+        random.shuffle(answer_options)
 
+        # TODO:答えの選択肢を解凍ファイルに書く
 
+        # TODO:答えの選択肢を解凍ファイルに書く
