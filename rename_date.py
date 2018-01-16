@@ -11,7 +11,21 @@ date_pattern = re.compile(r"""^(.*?)
     (.*?)$
     """, re.VERBOSE)
 
-# TODO: カレントディレクトリの全ファイルをループする
+# カレントディレクトリの全ファイルをループする
+for amer_filename in os.listdir('.'):
+    mo = date_pattern.search(amer_filename)
+
+    # 日付のないファイルをスキップする
+    if mo == None:
+        continue
+
+    #　ファイル名を部分分解する
+    before_part = mo.group(1)
+    month_part = mo.group(2)
+    day_part = mo.group(4)
+    year_part = mo.group(6)
+    apter_part = mo.group(8)
+
 
 # TODO: 日付のないファイルをスキップする
 
