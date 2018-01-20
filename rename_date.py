@@ -24,18 +24,14 @@ for amer_filename in os.listdir('.'):
     month_part = mo.group(2)
     day_part = mo.group(4)
     year_part = mo.group(6)
-    apter_part = mo.group(8)
+    after_part = mo.group(8)
 
+# 欧州式の日付ファイル名を作る
+euro_filename = before_part + day_part + '-' + month_part + '-' + year_part + after_part
 
-# TODO: 日付のないファイルをスキップする
+# ファイルのフルパス(絶対パス)を取得する
 
-# TODO: ファイル名を部分分解する
-
-# TODO: 欧州式の日付ファイル名を作る
-
-# TODO: ファイルのフルパス(絶対パス)を取得する
-
-# TODO: ファイル名を変更する
-
-
+# ファイル名を変更する
+print('Renamiing "{}" to "{}"...'.format(amer_filename, euro_filename))
+shutil.move(amer_filename, euro_filename)
 
