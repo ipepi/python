@@ -38,3 +38,26 @@ for foldername, subfolders, filenames in os.walk('/Users/Ippei/python'):
     for filename in filenames:
         print('FILE INSIDE ' + foldername + ': ' + filename)
         print(' ')
+
+
+import zipfile, os
+os.chdir('/Users/Ippei/python/folder')
+example_zip = zipfile.ZipFile('example.zip')
+
+import zipfile, os
+os.chdir('/Users/Ippei/python/folder')
+example_zip = zipfile.ZipFile('example.zip')
+example_zip.namelist()
+
+spam_info = example_zip.getinfo('spam.txt')
+spam_info.file_size
+
+example_zip.extractall()
+
+import zipfile
+new_zip = zipfile.ZipFile('new.zip', 'w')
+new_zip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
+new_zip.close()
+
+
+
