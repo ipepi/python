@@ -59,5 +59,22 @@ new_zip = zipfile.ZipFile('new.zip', 'w')
 new_zip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
 new_zip.close()
 
+import requests, bs4
+res = requests.get('http://nostarch.com')
+res.raise_for_status()
+no_starch_soup = bs4.BeautifulSoup(res.text)
+type(no_starch_soup)
 
+import requests, bs4
+example_file = open('example.html')
+example_soup = bs4.BeautifulSoup(example_file)
+type(example_soup)
+
+elems = example_soup.select('#author')
+type(elems)
+len(elems)
+type(elems[0])
+elems[0].getText()
+str(elems[0])
+elems[0].attrs
 
