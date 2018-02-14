@@ -1,0 +1,66 @@
+1518617230465	geckodriver	INFO	geckodriver 0.19.1
+1518617230478	geckodriver	INFO	Listening on 127.0.0.1:50103
+1518617231736	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/vc/q8f8kdkn4gn0yvqchtwv3q6c0000gn/T/rust_mozprofile.TRdxdOTVGm3c"
+1518617232424	Marionette	INFO	Enabled via --marionette
+2018-02-14 23:07:13.679 plugin-container[1950:81579] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1518617234122	Marionette	INFO	Listening on port 50116
+1518617234179	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-02-14 23:07:14.698 plugin-container[1951:81657] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1518617583100	geckodriver	INFO	geckodriver 0.19.1
+1518617583107	geckodriver	INFO	Listening on 127.0.0.1:50464
+1518617584218	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/vc/q8f8kdkn4gn0yvqchtwv3q6c0000gn/T/rust_mozprofile.8dq6jQfmRyR8"
+1518617584877	Marionette	INFO	Enabled via --marionette
+2018-02-14 23:13:06.132 plugin-container[2046:89847] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1518617586580	Marionette	INFO	Listening on port 50477
+1518617586683	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-02-14 23:13:07.275 plugin-container[2047:89982] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+2018-02-14 23:14:16.486 plugin-container[2056:91642] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 8175: TypeError: event.originalTarget.getAttribute is not a function
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 8182: TypeError: event.originalTarget.getAttribute is not a function
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1518617877781	geckodriver	INFO	geckodriver 0.19.1
+1518617877793	geckodriver	INFO	Listening on 127.0.0.1:50599
+1518617878901	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/vc/q8f8kdkn4gn0yvqchtwv3q6c0000gn/T/rust_mozprofile.bNFFF5UyeYgU"
+1518617879563	Marionette	INFO	Enabled via --marionette
+2018-02-14 23:18:00.711 plugin-container[2094:95378] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1518617881213	Marionette	INFO	Listening on port 50612
+1518617881281	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-02-14 23:18:01.815 plugin-container[2095:95504] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x730b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1518618099912	geckodriver	INFO	geckodriver 0.19.1
+1518618099922	geckodriver	INFO	Listening on 127.0.0.1:50738
+1518618101035	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/vc/q8f8kdkn4gn0yvqchtwv3q6c0000gn/T/rust_mozprofile.baCVJCQOQ2rS"
+1518618101685	Marionette	INFO	Enabled via --marionette
+2018-02-14 23:21:42.825 plugin-container[2241:99885] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1518618103301	Marionette	INFO	Listening on port 50752
+1518618103331	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-02-14 23:21:43.889 plugin-container[2243:99963] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-5027625-1, line 67: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-5027625-1, line 67: unreachable code after return statement
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1518618181554	geckodriver	INFO	geckodriver 0.19.1
+1518618181561	geckodriver	INFO	Listening on 127.0.0.1:50845
+1518618182673	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/vc/q8f8kdkn4gn0yvqchtwv3q6c0000gn/T/rust_mozprofile.fHbxObJdSb7s"
+1518618183321	Marionette	INFO	Enabled via --marionette
+2018-02-14 23:23:04.489 plugin-container[2259:101464] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1518618184974	Marionette	INFO	Listening on port 50858
+1518618185091	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-02-14 23:23:05.629 plugin-container[2260:101541] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-5027625-1, line 67: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-5027625-1, line 67: unreachable code after return statement
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2260, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
