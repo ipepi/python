@@ -78,3 +78,21 @@ elems[0].getText()
 str(elems[0])
 elems[0].attrs
 
+
+from selenium import webdriver
+browser = webdriver.Firefox()
+type(browser)
+browser.get('http://inventwithpython.com')
+link_elem = browser.find_element_by_link_text('Read Online for Free')
+type(link_elem)
+link_elem.click()
+
+from seleinium import webdriver
+from selenium.webdriver.common.keys import Keys
+browser = webdriver.Firefox()
+browser.get('http://nostarch.com')
+html_elem = browser.find_element_by_class_name('New game')
+html_elem.send_keys(Keys.END)
+html_elem.send_keys(Keys.HOME)
+
+
