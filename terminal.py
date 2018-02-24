@@ -96,3 +96,20 @@ html_elem.send_keys(Keys.END)
 html_elem.send_keys(Keys.HOME)
 
 
+import openpyxl
+wb = openpyxl.load_workbook('exampe.xlsx')
+wb.get_sheet_names()
+sheet = wb.get_sheet_by_name('Sheet1')
+sheet.cell(row=1, column=2)
+
+for i in range(1, 8, 2):
+    print(i, sheet.cell(row=i, column=2).value)
+
+
+
+import openpyxl
+wb = openpyxl.load_workbook('example.xlsx')
+sheet = wb.get_sheet_by_name('Sheet1')
+tupple(sheet['A1':'C3'])
+
+
