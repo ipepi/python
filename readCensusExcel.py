@@ -15,4 +15,15 @@ for row in range(2, sheet.max_row + 1):
     county = sheet['C' + str(row)].value
     pop = sheet['D' + str(row)].value
 
+    # この州のキーが確実に存在するようにする
+    county_data.setdefault(state, {})
+    #この州のこの群のキーが確実に存在するようにする
+    county_data[state].setdefault(county, {'tracts': 0, 'pop': 0})
+
+    #各行が人口調査標準値きいを表すので、数を一つ増やす
+    county_data[state][county]['tracts'] += 1
+    #この人口調査標準地域の人口だけ郡の人口を増やす
+    county_data[state][county]['pop'] += int(pop)
+
 #TODO: 新しいテキストファイルを開き、country_dataの内容を書き込む
+
