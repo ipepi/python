@@ -2,3 +2,4 @@ settings.json
 config.py
 .vscode/*
 .~lock.censuspopdata.xlsx#
+example_copy.xlsx

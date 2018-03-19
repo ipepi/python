@@ -113,3 +113,30 @@ sheet = wb.get_sheet_by_name('Sheet1')
 tupple(sheet['A1':'C3'])
 
 
+import openpyxl
+wb = openpyxl.Workbook()
+wb.get_sheet_names()
+sheet = wb.active
+sheet.title
+sheet.title = 'Spam Bacon Rggs Sheet'
+wb.get_sheet_names()
+
+
+import openpyxl
+wb = openpyxl.load_workbook('example.xlsx')
+sheet = wb.active
+sheet.title = 'Spam Spam Spam'
+wb.save('example_copy.xlsx')
+
+import openpyxl
+wb = openpyxl.Workbook()
+wb.get_sheet_names()
+wb.create_sheet()
+wb.get_sheet_names()
+wb.create_sheet(index=0, title='First Sheet')
+wb.get_sheet_names()
+wb.create_sheet(index=2, title='Middle Sheet')
+wb.get_sheet_names()
+
+
+
