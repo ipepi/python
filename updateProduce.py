@@ -11,6 +11,12 @@ PRICE_UPDATE = {'Garlic': 3.07,
                 'Celery': 1.19,
                 'Lemon': 1.27}
 
-# TODO:行をループして価格を更新する
+#行をループして価格を更新する
 
+for row_num in range(2, sheet.max_row):#先頭行をスキップ
+    produce_name = sheet.cell(row=row_num, column=1).value
+    if produce_name in PRICE_UPDATE:
+        sheet.cell(row=row_num, column=2).value = PRICE_UPDATE[produce_name]
+
+wb.save('updateProduceSalses.xlsx')
 
