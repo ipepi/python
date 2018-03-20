@@ -137,6 +137,61 @@ wb.create_sheet(index=0, title='First Sheet')
 wb.get_sheet_names()
 wb.create_sheet(index=2, title='Middle Sheet')
 wb.get_sheet_names()
+wb.remove_sheet(wb.get_sheet_by_name('Middle Sheet'))
+wb.remove_sheet(wb.get_sheet_by_name('Sheet1'))
+wb.get_sheet_names()
+
+import openpyxlwb = openpyxl.Workbook()
+wb = openpyxl.Workbook()
+sheet = wb.get_sheet_by_name('Sheet')
+sheet['A1'] = 'Hello World'
+sheet['A1'].value
 
 
+import openpyxl
+wb = openpyxl.Workbook()
+sheet = wb.active
+sheet['A1'] = 200
+sheet['A2'] = 300
+sheet['A3'] = '=SUM(A1:A2)'
+wb.save('writeFormula.xlsx')
+
+import openpyxl
+wb = openpyxl.Workbook()
+sheet = wb.active
+sheet.merge_cells('A1:D3')
+sheet['A1'] = 'Tweleve cells merged together'
+sheet.merge_cells('C5:D5')
+sheet['C5'] = 'Two merged cells.'
+wb.save('merged.xlsx')
+
+import openpyxl
+wb = openpyxl.load_workbook('merged.xlsx')
+sheet = wb.active
+sheet.unmerge_cells('A1:D3')
+sheet.unmerge_cells('C5:D5')
+wb.save('merged.xlsx')
+
+import openpyxl
+wb = openpyxl.load_workbook('produceSales.xlsx')
+sheet = wb.active
+sheet.freeze_panes = 'A2'
+wb.save('freezeExample.xlsx')
+
+import openpyxl
+wb = openyxl.Workbook()
+sheet = wb.active
+for i in range(1,11):
+    sheet['A' + str(i)] = i
+
+ref_obj = openpyxl.chart.Reference(sheet, min_col=1, min_row=1, max_col=1, max_row=10)
+series_obj = openpyxl.chart.Series(ref_obj, title='First series')
+chart_obj = openpyxl.chart.BarChart()
+chart_obj.append(series_obj)
+chart_obj.y = 50
+chart_obj.x = 100
+chart_obj.w = 300
+chart_obj.h = 200
+sheet.add_chart(chart_obj)
+wb.save('sampleChart.xlsx')
 
