@@ -179,7 +179,7 @@ sheet.freeze_panes = 'A2'
 wb.save('freezeExample.xlsx')
 
 import openpyxl
-wb = openyxl.Workbook()
+wb = openpyxl.Workbook()
 sheet = wb.active
 for i in range(1,11):
     sheet['A' + str(i)] = i
@@ -188,10 +188,35 @@ ref_obj = openpyxl.chart.Reference(sheet, min_col=1, min_row=1, max_col=1, max_r
 series_obj = openpyxl.chart.Series(ref_obj, title='First series')
 chart_obj = openpyxl.chart.BarChart()
 chart_obj.append(series_obj)
-chart_obj.y = 50
-chart_obj.x = 100
-chart_obj.w = 300
-chart_obj.h = 200
+#chart_obj.y = 10
+#chart_obj.x = 100
+#chart_obj.w = 300
+#chart_obj.h = 200
 sheet.add_chart(chart_obj)
 wb.save('sampleChart.xlsx')
+
+
+import PyPDF2
+:pdf1_file = open('meetingminutes.pdf', 'rb')
+pdf2_file = open('meetingminutes2.pdf', 'rb')
+pdf1_reader = PyPDF2.PdfFileReader(pdf1_file)
+pdf2_reader = PyPDF2.PdfFileReader(pdf2_file)
+pdf_writer = PyPDF2.PdfFileWriter()
+for page_num in range(pdf1_reader.numPages):
+    page_obj = pdf1_reader.getPage(page_num)
+    pdf_writer.addPage(page_obj)
+
+
+for page_num n range(pdf2_reader.numPages):
+    page_obj = pdf2_reader.getPage(page_num)
+    pdf_writer.addPage(page_obj)
+
+
+pdf_output_file = open('combinedminutes.pdf', 'wb')
+pdf_writer.write(pdf_output_file)
+pdf_output_file.close()
+pdf1_file.close()
+pdf2_file.close()
+
+
 
