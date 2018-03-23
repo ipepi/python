@@ -23,4 +23,7 @@ for filename in pdf_files:
         page_obj = pdf_reader.getPage(page_num)
         pdf_writer.addPage(page_obj)
 
-#TODO: 統合したPDFをファイルに保存する
+#統合したPDFをファイルに保存する
+pdf_output = open('allminutes.pdf', 'wb')
+pdf_writer.write(pdf_output)
+pdf_output.close()
