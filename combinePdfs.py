@@ -14,8 +14,10 @@ pdf_files.sort(key=str.lower)
 
 pdf_writer = PyPDF2.PdfFileWriter()
 
-#TODO: すべてのPDFファイルをループする
-
-#TODO: 先頭を除く全てのページをループして追加する
+#すべてのPDFファイルをループする
+for filename in pdf_files:
+    pdf_file_obj = open(filename, 'rb')
+    pdf_reader = PyPDF2.PdfFileReader(pdf_file_obj)
+    #TODO: 先頭を除く全てのページをループして追加する
 
 #TODO: 統合したPDFをファイルに保存する
