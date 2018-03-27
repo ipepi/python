@@ -265,3 +265,40 @@ pdf_writer.encrypt('swordfish')
 result_pdf = open('encryptedminutes.pdf', 'wb')
 pdf_writer.write(result_pdf)
 result_pdf.close()
+
+
+import docx
+doc = docx.Document('demo.docx')
+len(doc.paragraphs)
+doc.paragraphs[0].text
+doc.paragraphs[1].text
+len(doc.paragraphs[1].runs)
+
+doc.paragraphs[1].runs[0].text
+doc.paragraphs[1].runs[1].text
+doc.paragraphs[1].runs[2].text
+doc.paragraphs[1].runs[3].text
+
+
+import csv
+example_file = open('example.csv')
+example_reader = csv.reader(example_file)
+example_data = list(example_reader)
+example_data
+
+
+import csv
+example_file = open('example.csv')
+example_reader = csv.reader(example_file)
+for row in example_reader:
+    print('ROW #' + str(example_reader.line_num) + ' ' + str(row))
+
+
+
+import csv
+output_file = open('output.csv', 'w', newline='')
+output_writer = csv.writer(output_file)
+output_writer.writerow(['spam', 'egg', 'bacon', 'ham'])
+output_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
+output_writer.writerow([1, 2, 3.131592, 4])
+output_file.close()
