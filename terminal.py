@@ -302,3 +302,38 @@ output_writer.writerow(['spam', 'egg', 'bacon', 'ham'])
 output_writer.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
 output_writer.writerow([1, 2, 3.131592, 4])
 output_file.close()
+
+import csv 
+csv_file = open('example.tsv', 'w', newline='')
+csv_writer = csv.writer(csv_file, delimiter='\t', lineterminator='\n\n')
+csv_writer.writerow(['apples', 'oranges', 'grapes'])
+csv_writer.writerow(['eggs', 'bacon', 'ham'])
+csv_writer.writerow(['spam', 'spam', 'spam', 'spam', 'spam', 'spam'])
+csv_file.close()
+
+
+string_of_json_data = '{"name": "Zophie", "isCat": true, "miceCaught": 0, "felineIQ": null}'
+import json
+json_data_as_python_value = json.loads(string_of_json_data)
+json_data_as_python_value
+
+import datetime
+import time
+halloween2020 = datetime.datetime(2020, 10, 31, 0, 0, 0)
+while datetime.datetime.now() < halloween2020:
+    time.sleep(1)
+
+oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
+oct21st.strftime('%Y/%m/%d %H:%M:%S')
+
+import threading, time
+print('プログラムの開始')
+
+def take_a_nap():
+    time.sleep(5)
+    print('起きた！')
+
+thread_obj = threading.Thread(Target=take_a_nap)
+thread_obj.start()
+
+print('プログラム終了')
